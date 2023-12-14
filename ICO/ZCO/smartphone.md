@@ -4,24 +4,24 @@ This problem can be solved using the greedy approach. The idea is to sort the cu
 
 **Greedy Approach:**
 
-1. **Input Handling:**
+1. Input Handling:
    - Read the number of customers, `n`.
    - Read the budget of each customer and store it in a vector.
 
-2. **Sort the Budgets:**
+2. Sort the Budgets:
    - Sort the vector of budgets in ascending order.
 
-3. **Calculate Revenue:**
+3. Calculate Revenue:
    - Iterate through the sorted budgets.
    - For each budget, calculate the revenue by multiplying the budget with the number of remaining customers.
    - Keep track of the maximum revenue.
 
-4. **Output:**
+4. Output:
    - Print the maximum revenue.
 
 **Code:**
 
-```cpp
+```c++
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -52,6 +52,7 @@ int main() {
 
   return 0;
 }
+
 ```
 
 **Explanation:**
