@@ -1,4 +1,4 @@
-// Time Complexity : O(sqrt(n))
+// Time Complexity : O(sqrt(n) / 2)
 bool isPrime(int x) {
     // check for only even prime
     if (x == 2) {
@@ -6,7 +6,7 @@ bool isPrime(int x) {
     }
 
     // pre-eliminates non prime candidates
-    if (x <= 1 || x % 2 == 0) {
+    if ((x <= 1) || (x % 2) == 0) {
         return false;
     }
 
