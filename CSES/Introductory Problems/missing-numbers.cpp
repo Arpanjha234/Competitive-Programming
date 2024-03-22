@@ -17,6 +17,6 @@ int main() {
  
   sum2 = n * (n + 1) / 2;
  
-  cout << (sum2 - sum1) << endl;
+  cout << (sum2 - sum1) << "\n";
   return 0;
 }
