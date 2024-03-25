@@ -15,10 +15,11 @@ int main() {
 
   // base-case
   dp[0] = dp[1] = 1;
-  // dp[i] = number of ways to construct sum n
+
   for(int i = 2; i <= n; i++){
     for(int j = 1; j <= 6; j++){
       if((i - j) >= 0){
+        // dp[i] = number of ways to construct sum n
         dp[i] = ((dp[i - j] + dp[i]) % mod);
       }
     }
