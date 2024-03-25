@@ -1,10 +1,9 @@
+#include <bits/stdc++.h>
+#include <ext/pb_ds/assoc_container.hpp>
+
 // pragmas for optimization
 #pragma GCC optimize("O3,unroll-loops")
 #pragma GCC target("avx,avx2,bmi,bmi2,popcnt,lzcnt")
-
-// libraries
-#include <bits/stdc++.h>
-#include <ext/pb_ds/assoc_container.hpp>
 
 // namespaces
 using namespace std;
