@@ -11,7 +11,7 @@ int main() {
   int n;
   cin >> n;
 
-  int dp[n + 100] = {0};
+  int dp[n + 10] = {0};
 
   // base-case
   dp[0] = dp[1] = 1;
