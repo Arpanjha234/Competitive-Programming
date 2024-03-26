@@ -6,16 +6,24 @@ int main() {
   ios::sync_with_stdio(0);
   cin.tie(0);
 
-  int n, temp;
-  cin >> n;
+  int t;
+  cin >> t;
+  while(t--){
+    int n, temp, x;
+    cin >> n;
   
-  vector<int> ans;
-  temp = n;
-  for(int i = 1; i <= n; i *= 10){
-    ans.push_back((temp % 10) * i);
-    temp /= 10;
-  }
+    vector<int> ans;
+    temp = n;
+    
+    for(int i = 1; i <= n; i *= 10){
+      x = (temp % 10) * i;
+      if(x > 0){ans.push_back(x);}
+      temp /= 10;
+    }
 
-  for(int  i : ans){cout << i << " ";}
+    cout << ans.size() << '\n';
+    for(int  i : ans){cout << i << " ";}
+    cout << endl;
+  }
   return 0;
 }
