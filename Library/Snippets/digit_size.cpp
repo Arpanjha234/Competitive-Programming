@@ -1,4 +1,4 @@
-// Method 2 : Shorter Method 
+// Method 1 : Shorter Method 
 // Time Complexity : O(log n)
 int dgt_sz(ll x){
   return log10(x) + 1;
