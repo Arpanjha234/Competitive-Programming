@@ -10,7 +10,7 @@ int search(){
     int mid = (begin + ((end - begin) >> 2));
 
     // eliminating search-space
-    if(!(fx(k))){
+    if(!(fx(mid))){
       begin = mid;
     }
     else{
