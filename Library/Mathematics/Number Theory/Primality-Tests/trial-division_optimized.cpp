@@ -6,7 +6,7 @@ bool isPrime(int x) {
     }
 
     // pre-eliminates non prime candidates
-    if ((x <= 1) || (x % 2) == 0) {
+    if ((x <= 1) || !(x & 1) {
         return false;
     }
 
