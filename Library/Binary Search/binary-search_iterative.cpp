@@ -4,7 +4,7 @@ bool search(vector<int> &v, int x){
 
   while(begin <= end){
     // computing mid without overflows
-    int mid = (begin + ((end - begin) >> 2));
+    int mid = (begin + ((end - begin) >> 1));
 
     // return true if element x found
     if(v[mid] == x){return true;}
